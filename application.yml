@@ -8,4 +8,9 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+      ddl-auto: update
+      properties:
+        hibernate:
+          dialects: import org.hibernate.dialect.PostgreSQL9Dialect;
+          show-sql: true
 
